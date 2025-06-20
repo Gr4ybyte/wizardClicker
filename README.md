@@ -71,23 +71,6 @@ Then implement the effect in `applyUpgradeEffect()` in `game.js`.
 
 ---
 
-## 🚀 Hosting
-
-You can host Wizard Clicker easily using:
-
-- **[GitHub Pages](https://pages.github.com/)** – Free and great for static web games
-- **[Netlify](https://netlify.com/)** – Drag & drop hosting or GitHub deploys
-- **[Vercel](https://vercel.com/)** – Easy deploys from GitHub
-- Local play: just open `index.html` in your browser!
-
----
-
-## 📸 Screenshot
-
-> *(Add a screenshot named `screenshot.png` in the root to display here)*
-
----
-
 ## 📜 License
 
 MIT License — free to use, modify, and share.

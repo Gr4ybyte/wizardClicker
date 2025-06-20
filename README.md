@@ -13,6 +13,8 @@
 - **Ascend to earn Arcane Essence**, resetting progress but unlocking powerful upgrades.
 - **Spend Arcane Essence on permanent upgrades** to accelerate future runs.
 - Watch your wizard empire grow exponentially!
+  
+PLAY DEMO HERE: https://gr4ybyte.github.io/wizardClicker/
 
 ---
 

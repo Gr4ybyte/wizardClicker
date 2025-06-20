@@ -1,0 +1,213 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1b2735 0%, #090a0f 100%);
+  color: #c0f9f7;
+  margin: 0;
+  padding: 20px;
+  user-select: none;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 3em;
+  text-align: center;
+  color: #71e5ff;
+  text-shadow: 0 0 15px #71e5ff;
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 720px;
+  margin: auto;
+  background: rgba(10, 25, 35, 0.85);
+  border-radius: 15px;
+  padding: 25px 40px 40px;
+  box-shadow: 0 0 40px #3bb8f9;
+}
+
+#soulGemsDisplay, #arcaneEssenceDisplay, #soulGemsPerSecond {
+  font-size: 1.4em;
+  margin-bottom: 6px;
+  font-weight: 600;
+  text-align: center;
+  color: #a0f6ff;
+  text-shadow: 0 0 6px #00e6ff;
+}
+
+button {
+  width: 100%;
+  padding: 15px 0;
+  margin: 12px 0;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #004e6e;
+  background: linear-gradient(45deg, #00eaff, #0088aa);
+  border: none;
+  border-radius: 12px;
+  box-shadow:
+    0 0 10px #00eaff,
+    inset 0 0 5px #00aacc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+}
+
+button:disabled {
+  background: #004e6e;
+  box-shadow: none;
+  color: #002d3a;
+  cursor: not-allowed;
+  transform: none;
+  text-shadow: none;
+}
+
+button:hover:not(:disabled) {
+  background: linear-gradient(45deg, #00ffff, #00ccdd);
+  box-shadow:
+    0 0 25px #00ffff,
+    inset 0 0 10px #00ccdd;
+  transform: scale(1.05);
+}
+
+button:active:not(:disabled) {
+  transform: scale(0.95);
+  box-shadow:
+    0 0 15px #00b3cc,
+    inset 0 0 7px #008899;
+}
+
+#clickOrb {
+  font-size: 2em;
+  font-weight: 900;
+  color: #00ffea;
+  background: radial-gradient(circle at center, #00ffea, #004d59);
+  box-shadow:
+    0 0 40px #00ffea,
+    inset 0 0 30px #00ffea;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  margin: 20px auto;
+  display: block;
+  text-shadow: 0 0 15px #00fff0;
+  transition: box-shadow 0.5s ease;
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+#clickOrb:hover {
+  box-shadow:
+    0 0 70px #00fff0,
+    inset 0 0 40px #00fff0;
+  animation: pulseGlowFast 1.5s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow:
+      0 0 40px #00ffea,
+      inset 0 0 30px #00ffea;
+  }
+  50% {
+    box-shadow:
+      0 0 80px #00fff0,
+      inset 0 0 50px #00fff0;
+  }
+}
+
+@keyframes pulseGlowFast {
+  0%, 100% {
+    box-shadow:
+      0 0 70px #00fff0,
+      inset 0 0 40px #00fff0;
+  }
+  50% {
+    box-shadow:
+      0 0 110px #00ffff,
+      inset 0 0 60px #00ffff;
+  }
+}
+
+.section {
+  margin-top: 40px;
+  border-top: 2px solid #00e0ff;
+  padding-top: 15px;
+}
+
+.section h2 {
+  font-size: 2em;
+  font-weight: 800;
+  color: #00d4ff;
+  text-shadow: 0 0 8px #00c3e0;
+  margin-bottom: 15px;
+}
+
+.section div > button {
+  width: 65%;
+  margin-bottom: 5px;
+  font-size: 1em;
+  font-weight: 700;
+  background: linear-gradient(45deg, #00c9ff, #007f99);
+  color: #e0f7ff;
+  box-shadow:
+    0 0 8px #00c9ff,
+    inset 0 0 5px #005766;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.section div > button:hover:not(:disabled) {
+  background: linear-gradient(45deg, #00ffff, #0099aa);
+  box-shadow:
+    0 0 15px #00ffff,
+    inset 0 0 10px #006f7f;
+  transform: scale(1.03);
+}
+
+.section div > div {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #a0f1ff;
+  margin-left: 10px;
+  user-select: none;
+}
+
+#prestigeButton {
+  background: linear-gradient(45deg, #ff6347, #c94c4c);
+  color: white;
+  box-shadow:
+    0 0 15px #ff6347,
+    inset 0 0 10px #c94c4c;
+}
+
+#prestigeButton:hover:not(:disabled) {
+  background: linear-gradient(45deg, #ff7b5a, #e06f6f);
+  box-shadow:
+    0 0 25px #ff7b5a,
+    inset 0 0 15px #e06f6f;
+  transform: scale(1.05);
+}
+
+#prestigeButton:active:not(:disabled) {
+  transform: scale(0.95);
+  box-shadow:
+    0 0 15px #d5534d,
+    inset 0 0 8px #a84343;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px 20px 30px;
+  }
+
+  #clickOrb {
+    width: 120px;
+    height: 120px;
+    font-size: 1.5em;
+  }
+
+  button {
+    font-size: 1em;
+  }
+}

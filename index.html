@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Wizard Clicker</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wizard Clicker</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="container">
+    <h1>Wizard Clicker</h1>
+    <div id="soulGemsDisplay">Soul Gems: 0</div>
+    <div id="arcaneEssenceDisplay">Arcane Essence: 0</div>
+    <div id="soulGemsPerSecond">Soul Gems per second: 0</div>
 
-<div class="container">
-  <h1>Wizard Clicker</h1>
-  <div id="soulGemsDisplay">Soul Gems: 0</div>
-  <div id="arcaneEssenceDisplay">Arcane Essence: 0</div>
-  <div id="soulGemsPerSecond">Soul Gems per second: 0</div>
+    <button id="clickOrb" title="Click to absorb arcane power!">✨ Absorb Arcane Power! ✨</button>
 
-  <button id="clickOrb" title="Click to absorb arcane power!">✨ Absorb Arcane Power! ✨</button>
+    <div id="prestigeInfo"></div>
+    <button id="prestigeButton">Ascend (Prestige)</button>
 
-  <div id="prestigeInfo"></div>
-  <button id="prestigeButton">Ascend (Prestige)</button>
+    <div class="section buildings">
+      <h2>Buildings</h2>
+      <div id="buildingsContainer"></div>
+    </div>
 
-  <div class="section buildings">
-    <h2>Buildings</h2>
-    <div id="buildingsContainer"></div>
+    <div class="section upgrades">
+      <h2>Upgrades (Cost in Arcane Essence)</h2>
+      <div id="upgradesContainer"></div>
+    </div>
   </div>
 
-  <div class="section upgrades">
-    <h2>Upgrades (Cost in Arcane Essence)</h2>
-    <div id="upgradesContainer"></div>
-  </div>
-</div>
+  <canvas id="gemCanvas"></canvas>
 
-<script src="data.js"></script>
-<script src="game.js"></script>
-
+  <script src="data.js"></script>
+  <script src="game.js"></script>
 </body>
 </html>
